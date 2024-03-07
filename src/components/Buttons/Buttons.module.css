@@ -1,0 +1,36 @@
+.wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.wrapper a button{
+    border-radius: 5px;
+    background: rgba(150, 147, 147, .2);
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    transition: all 400ms ease;
+}
+
+.wrapper a button:hover{
+    background: rgba(150, 147, 147, .35);
+    transition: all 400ms ease;
+}
+
+.wrapper h3{
+    font-weight: 450;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .wrapper{
+        gap:1rem;
+    }
+    
+    .wrapper a button{
+        padding: 7px;
+        font-size: 10px;
+    }
+}

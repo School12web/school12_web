@@ -1,0 +1,161 @@
+.pageContainer{
+    user-select: none;
+
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageContainer::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .75);
+	width: 100%;
+	height: 100%;
+}
+
+.videoBackground{
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.pageWrapper{
+	position: relative;
+	z-index: 2;
+	color: white;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+.headerTitle{
+	font-size: 46px;
+	text-align: center;
+}
+
+.headerSubtitle{
+	text-align: center;
+}
+
+.pageWrapper a{
+	text-decoration: none;
+	position:absolute;
+	bottom: 40px;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.pageWrapper a button{
+	padding: 10px 25px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	font-weight: 500;
+}
+
+.main{
+	padding: 40px;
+}
+
+.mainInfoWrapper{
+	display: flex;
+	gap: 15px;
+
+	align-items: flex-start;
+}
+
+.mainInfoWrapper p{
+	font-weight: 450;
+	width: 100%;
+	font-size: 18px;
+}
+
+.heroCardsWrapper{
+	min-height: 18rem;
+	width: 75%;
+	overflow-y: scroll;
+}
+
+.heroCards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.mainTitle{
+	margin: 35px 0 ;
+	text-align: center;
+	font-size: 26px;
+}
+
+.mainInfo{
+	text-align: justify;
+	font-size: 19px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.headerTitle{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.headerSubtitle{
+		font-size: 13px;
+	}
+
+	.pageWrapper a button{
+		border-radius: 5px;
+		border-width: .99px;
+		font-size: 10px;
+		padding: 5px 10px;
+		font-weight: 400;
+	}
+
+	.main{
+		padding: 15px;
+	}
+	
+	.mainTitle{
+		font-size: 19px;
+	}
+
+	.mainInfo{
+		padding: 15px;
+		font-size: 15px;
+	}
+
+	.mainInfoWrapper{
+		flex-direction: column;
+	}
+
+	.heroCardsWrapper{
+		width: 100%;
+	}
+
+	.heroCards{
+		overflow-x: scroll;
+		grid-auto-columns: minmax(20%, 1fr);
+		grid-auto-flow: column;
+		grid-template-columns: unset;
+	}
+
+	.mainInfoWrapper p{
+		font-size: 13px;
+	}
+}
