@@ -19,7 +19,7 @@ const Person = () => {
             
             <div className={styles.info}>
                 <div className={styles.photo}>
-                    <img src="/svetlogorsk_react/Izaslav.jpg" alt="person" />
+                    <img src="/school12_web/Izaslav.jpg" alt="person" />
                 </div>
 
                 <div className={styles.poem}>
