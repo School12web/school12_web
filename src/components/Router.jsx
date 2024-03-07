@@ -14,7 +14,7 @@ import Person from '../pages/Person/Person'
 const Router = () => {
   return <BrowserRouter>
     <Routes>
-      <Route path="/svetlogorsk_react/" element={<Layout/>}>
+      <Route path="/school12_web/" element={<Layout/>}>
         <Route index element={ <MainPage/> }/>
         <Route path=":id" element={ <InfoPage/> }/>
         <Route path="search" element={ <SearchPage/> }/>
