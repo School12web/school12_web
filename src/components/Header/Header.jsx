@@ -18,7 +18,7 @@ const Header = ( {activeButtonIndex=0, bgColor=""} ) => {
 
       <div className={`${styles.headerButtonsWrapper} ${isMenuVisible ? styles.menuVisible : ""}`}>
         <HeaderButton
-          path="/svetlogorsk_react/"
+          path="/school12_web/"
           svg_path='./Header/home.svg'
           buttonText='Главная'
           isActive={activeButtonIndex===1}
@@ -26,7 +26,7 @@ const Header = ( {activeButtonIndex=0, bgColor=""} ) => {
         />
 
         <HeaderButton 
-          path="/svetlogorsk_react/search" 
+          path="/school12_web/search" 
           svg_path='./Header/search.svg' 
           buttonText='Без срока давности'
           isActive={activeButtonIndex===2}
@@ -34,7 +34,7 @@ const Header = ( {activeButtonIndex=0, bgColor=""} ) => {
         />
 
         <HeaderButton
-          path='/svetlogorsk_react/person'
+          path='/school12_web/person'
           svg_path='./Header/person.svg'
           buttonText='Изяслав Котляров'
           isActive={activeButtonIndex===3}
@@ -42,14 +42,14 @@ const Header = ( {activeButtonIndex=0, bgColor=""} ) => {
         />
 
         {/* <HeaderButton 
-          path="/svetlogorsk_react/shatilki_cards" 
+          path="/school12_web/shatilki_cards" 
           svg_path='./Header/cards.svg' 
           buttonText='Шатилки, ушедшие в историю'
           isActive={activeButtonIndex===4}
         /> */}
         
         <HeaderButton 
-          path="/svetlogorsk_react/game" 
+          path="/school12_web/game" 
           svg_path='./Header/game.svg' 
           buttonText='Викторина'
           isActive={activeButtonIndex===5}
