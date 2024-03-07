@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url('/svetlogorsk_react/IzaslavBG.png');
+    background-image: url('/school12_web/IzaslavBG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
