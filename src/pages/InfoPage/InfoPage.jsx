@@ -49,7 +49,7 @@ const InfoPage = () => {
                         <p className={styles.headerSubtitle}>Память народа </p>
 
                         <a href={data.lochref} target="_blank" style={{ position: "relative", bottom: "0", display: "flex", alignItems: "center", gap: ".45rem", color:"white" }}>
-                            <img src="/svetlogorsk_react/location.svg" alt="locmark" />
+                            <img src="/school12_web/location.svg" alt="locmark" />
                             <h5>{data.title}</h5>
                         </a>
 
